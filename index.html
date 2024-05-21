@@ -6,7 +6,31 @@
     <link rel="stylesheet" href="styles.css">
     <title>Daily Tracker</title>
 </head>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</nav>
 <body>
+
+    <h2>Habit Tracker</h2>
+
+    <p>A simple website to track habits.</p>
+
+        <form action="addTask()">
+            <label for="Habits">Choose a Habit</label>
+            <select name="Habits" id="Habits">
+            <option value="nightBrush">Night Brush</option>
+            <option value="excercise">Excercise</option>
+            <option value="noAlcohol">No Alcohol</option>
+            <option value="drinkWater">Drink Water</option>
+            <option value="eatHealthy">Eat Healthy</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    
         <button id="addTaskBtn">ADD A TASK</button>
         <div id="taskContainer"></div>
 </body>
